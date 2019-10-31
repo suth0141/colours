@@ -1,0 +1,103 @@
+/**
+Import Sans-Serif Web Font here using @import
+**/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+/**
+Create your CSS colour variables up here**/
+:root{
+  --primary1: hsl(9.52,95.41%,57.25%);
+  --primary2: hsl(240, 72%, 30%);
+  --secondary1: hsl(60, 19%, 24%);
+  --secondary2: hsl(48, 99%, 54%);
+  --grey1: hsl(0, 0%, 27%);
+  --grey2: hsl(84, 7%, 87%);
+  --grey3: hsl(192, 48%, 94%);
+  --grey4: hsl(225, 3%, 31%);
+  --headingColor: hsl(212, 84%, 94%);
+}
+*  {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Muli, Arial, sans-serif;
+}
+
+html {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+body {
+  font-weight: 300;
+}
+
+header {
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  background-color: var(--grey1);
+  color: var(--headingColor);
+}
+header h1{
+  border: 2px solid var(--primary2);
+  text-align: center;
+  color: var(--primary2);
+} 
+
+nav {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: var(--primary1);
+}
+
+nav a{
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--grey3);
+}
+
+nav a:hover{
+  color: var(--secondary1);
+}
+
+main {
+  padding: 1rem 2rem;
+  background-color: var(--grey2);
+}
+
+main h2 {
+  font-size: 2rem;
+  color: var(--headingColor);
+  background-color: var(--grey1);
+  margin-right: 1109px;
+  padding-left: 5px;
+}
+
+main p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: var(--grey4);
+}
+
+ul {
+  margin: 1rem 2rem;
+}
+
+main li {
+  font-size: 1rem;
+  color: var(--grey4);
+}
+
+footer {
+  padding: 1rem 2rem;
+  background-color: var(--secondary2);
+}
+
+footer p {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  color: var(--grey4);
+}
